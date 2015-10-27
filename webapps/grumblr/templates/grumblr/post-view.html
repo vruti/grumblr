@@ -1,0 +1,31 @@
+<!-- The entire post section-->
+<div class="post" id ="{{post.id}}">
+	<!-- The actual post with username, user imahe, link to user profile, the post and a timestamp-->
+	<p class = "center"> <a href="/grumblr/profile/{{post.user.user}}">{{post.user}}</a> </p>
+	<div class="postImg">
+		<img class="img-circle-post" src="{{post.user.photo}}">
+	</div>
+	<div class ="postContent">
+		<p class="postMessage">{{post}}</p>
+		<div class="timestamp">
+			{{post.timestamp}}
+			</div>
+	</div>
+
+	<!-- Displays the comments on a post-->
+	<div class="commentbox">
+	<p class = "center"><a href="#" class="getComments" post-id="{{post.id}}">View Comments</a></p>
+	  <ul class="commentList center commentList{{post.id}}">
+	  </ul>
+	  <form id="commentForm{{post.id}}" role="form" method="post">
+		<div id="goDown{{post.id}}"></div>
+		<div class="center"> 
+		  {{form.comment}}
+		</div>
+		<div class="center">
+		  <button type="submit" class="addComment btn btn-default" post-id="{{post.id}}">Add</button>
+		</div>
+		<input name="csrfmiddlewaretoken" type="hidden" value="{{token}}">
+	  </form> 
+	</div>
+</div>

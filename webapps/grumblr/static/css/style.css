@@ -1,0 +1,105 @@
+ul#Header {
+    list-style-type: none;
+    margin: 0;
+    padding: 5;
+	background-color: purple;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 30px;
+	
+}
+
+body{
+	padding-top: 50px;
+}
+
+h1{
+	padding-top: 50px;
+}
+
+.login{
+	padding: 30px;
+    display: table;
+    margin: 0 auto;
+	margin-top: 50px;
+	border: 1px solid black
+}
+
+.center{
+	display: table;
+    margin: 0 auto;
+	padding: 10px;
+}
+
+.img-circle-prof {
+    border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+
+.img-circle-post {
+    border-radius: 50%;
+	width: 100px;
+}
+
+table-cell{
+	padding: 50px;
+}
+
+.profile {
+	float: left;
+	padding: 50px;
+}
+
+
+.post{
+	clear:both;
+	display:inline-block;
+	border: 1px solid black;
+	border-radius: 25px;
+    background-image: url("../images/paper.jpg");
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 10px;
+	width: 500px;
+	display: table;
+    margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.commentbox{
+	clear:both;
+	display:inline-block;
+	border: 1px solid black;
+	border-radius: 25px;
+    
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 10px;
+	width: 300px;
+	display: table;
+    margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.postImg{
+	float: left;
+	width: 100px;
+	padding: 20px;
+}
+
+.postContent{
+	float: right;
+	padding: 20px;
+}
+
+.postMessage{
+	word-wrap: break-word;
+}
+
+.timestamp{
+	position: relative;
+	bottom: 0;
+	float: right;
+	font-size: 10px;
+}
+
